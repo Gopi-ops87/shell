@@ -1,4 +1,5 @@
 #!/bin/bash
 
-export city="Amsterdam"
+export CITY="Amsterdam"
 
+echo "I am in: $CITY"
