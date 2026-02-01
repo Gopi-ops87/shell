@@ -15,16 +15,16 @@ mkdir -p $LOGS_FOLDER
 echo "Script started executed at: $(date)"
 
 if [ $USER_ID -ne 0 ]; then 
-   echo -e "ERROR: use root access" &>$LOG_FILE
+   echo -e "ERROR: use root access" 
    exit 1
 fi
 
 VALIDATE() {
     if [ $1 -ne 0 ]; then
-       echo -e "Error: $2... $R installation is failed $N" &>$LOG_FILE
+       echo -e "Error: $2... $R installation is failed $N" 
        exit 1
     else 
-       echo -e " $2.. $G installation is successfull $N" &>$LOG_FILE
+       echo -e " $2.. $G installation is successfull $N" 
     fi
 }
 
