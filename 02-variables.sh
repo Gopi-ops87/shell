@@ -1,5 +1,9 @@
 #!/bin/bash
 
-TODAY=$(date)
+#TODAY=$(date)
 
-echo "today is: $TODAY"
+#echo "today is: $TODAY"
+
+TODAY=$(date +%Y-%m-%d)
+
+echo "Today is $DATE"
