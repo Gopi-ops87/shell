@@ -8,3 +8,4 @@ elif [ $NUMBER -eq 15 ]; then
    echo "given number $NUMBER is equal to 15"
 else
    echo "given number $NUMBER is less than 15"
+fi
