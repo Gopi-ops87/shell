@@ -8,16 +8,16 @@ N="e[0m"
 USER_ID=$(id -u)
 
 if [ $USER_ID -ne 0 ]; then 
-   echo -e "ERROR: ${R} use root access${N}"
+   echo -e "ERROR: use root access"
    exit 1
 fi
 
 VALIDATE() {
     if [ $1 -ne 0 ]; then
-       echo -e "Error: ${R} $2 installation is failed${N}"
+       echo -e "Error: $2: $R installation is failed $N"
        exit 1
     else 
-       echo -e "${G} $2 installation is successfull${N}"
+       echo -e " $2: $G installation is successfull $N"
     fi
 }
 
