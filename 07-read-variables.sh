@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -s -p "Enter password: " PASS
+read -s -p "Enter password: " PASS   # -s means it will hide the password that you entered on screen 
 
 echo
 
