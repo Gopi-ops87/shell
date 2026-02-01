@@ -6,4 +6,4 @@
 
 TODAY={$(date +%Y-%m-%d)}
 
-echo "Today is: $DATE"
+echo "Today is: $TODAY"
