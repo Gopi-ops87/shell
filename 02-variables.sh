@@ -4,6 +4,6 @@
 
 #echo "today is: $TODAY"
 
-TODAY=$((date +%Y-%m-%d))
+TODAY=$(date +%Y-%m-%d)
 
 echo "Today is: $DATE"
