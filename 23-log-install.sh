@@ -7,9 +7,9 @@ G="\e[32m"
 Y="\e[33m"
 N="\e[0m"
 
-LOGS_FOLDER="/var/log/shell"
+LOGS_FOLDER="/var/log/shell-script"
 SCRIPT_NAME=$( basename "$0" .sh)
-LOG_FILE="$LOGS_FOLDER/$SCRIPTNAME.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
 
