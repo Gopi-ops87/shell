@@ -9,7 +9,7 @@ N="\e[0m"
 
 LOGS_FOLDER="/var/log/shell"
 SCRIPT_NAME=$( basename "$0" .sh)
-LOGS_FILE="$LOGS_FOLDER/$SCRIPTNAME.log"
+LOG_FILE="$LOGS_FOLDER/$SCRIPTNAME.log"
 
 mkdir -p $LOGS_FOLDER
 
