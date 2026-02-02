@@ -11,7 +11,7 @@ LOGS_FOLDER="/var/log/shell"
 SCRIPT_NAME=$( basename "$0" .sh)
 LOGS_FILE="$LOGS_FOLDER/$SCRIPTNAME.log"
 
-mkdir -p LOGS_FOLDER
+mkdir -p $LOGS_FOLDER
 
 echo "======================" &>>"$LOG_FILE"
 echo "script started executed at: $(date)" &>>"$LOG_FILE"
