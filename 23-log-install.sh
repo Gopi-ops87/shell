@@ -24,12 +24,12 @@ fi
 
 VALIDATE() {
             if [ $1 -ne 0 ]; then
-                echo "ERROR:: $2 ....$R installation is failed $N"
-                echo "ERROR:: $2 ....$R installation is failed $N" &>>"$LOG_FILE"
+                echo -e "ERROR:: $2 ....$R installation is failed $N"
+                echo -e "ERROR:: $2 ....$R installation is failed $N" &>>"$LOG_FILE"
                 exit 1
             else
-                echo "$2.. $G Installaton is success $N"
-                echo "$2.. $G Installaton is success $N" &>>"$LOG_FILE"
+                echo -e "$2.. $G Installaton is success $N"
+                echo -e "$2.. $G Installaton is success $N" &>>"$LOG_FILE"
             fi
 }
 
@@ -38,8 +38,8 @@ dnf list installed mysql &>/dev/null
         dnf install mysql -y &>>"$LOG_FILE"
         VALIDATE $? "MYSQL" 
     else
-        echo "MySql already installed ...$Y skipping $N"
-        echo "MySql already installed ...$Y skipping $N" &>>"$LOG_FILE"
+        echo -e "MySql already installed ...$Y skipping $N"
+        echo -e "MySql already installed ...$Y skipping $N" &>>"$LOG_FILE"
     fi
 
 dnf list installed nginx &>/dev/null
@@ -47,8 +47,8 @@ dnf list installed nginx &>/dev/null
         dnf install nginx -y &>>"$LOG_FILE"
         VALIDATE $? "NGINX" 
     else
-        echo "NGINX already installed ...$Y skipping $N"
-        echo "MySql already installed ...$Y skipping $N" &>>"$LOG_FILE"
+        echo -e "NGINX already installed ...$Y skipping $N"
+        echo -e "MySql already installed ...$Y skipping $N" &>>"$LOG_FILE"
     fi
 
 
