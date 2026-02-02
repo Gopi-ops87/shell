@@ -36,7 +36,7 @@ VALIDATE() {
 dnf list installed mysql &>/dev/null
     if [ $? -ne 0 ]; then
         dnf install mysql -y &>>"$LOG_FILE"
-        validate $? "MYSQL" 
+        VALIDATE $? "MYSQL" 
     else
         echo "MySql already installed ...$Y skipping $N"
         echo "MySql already installed ...$Y skipping $N" &>>"$LOG_FILE"
@@ -45,7 +45,7 @@ dnf list installed mysql &>/dev/null
 dnf list installed nginx &>/dev/null
     if [ $? -ne 0 ]; then
         dnf install nginx -y &>>"$LOG_FILE"
-        validate $? "NGINX" 
+        VALIDATE $? "NGINX" 
     else
         echo "NGINX already installed ...$Y skipping $N"
         echo "MySql already installed ...$Y skipping $N" &>>"$LOG_FILE"
