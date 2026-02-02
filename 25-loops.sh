@@ -13,8 +13,8 @@ LOG_FILE="$LOGS_FOLDER/$SCRIPT_NAME.log"
 
 mkdir -p $LOGS_FOLDER
 
-echo "======================" &>>"$LOG_FILE"
-echo "script started executed at: $(date)" &>>"$LOG_FILE"
+
+echo "script started executed at: $(date)"
 
 if [ $USER_ID -ne 0 ]; then
     echo "ERROR:: please use root access"
